@@ -1,1 +1,1 @@
-export * from './react-button.tsx'
+export * from './react-button'

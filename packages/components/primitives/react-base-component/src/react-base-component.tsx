@@ -1,6 +1,6 @@
-import React, { FC } from "react";
+import React, { type FC } from "react";
 import { getProperties } from "./utils";
-import type { ReactBaseComponentProperties } from "../types";
+import type { ReactBaseComponentProperties } from "./react-base-component.types";
 
 type ReactBaseComponentProps = {
   component: string;

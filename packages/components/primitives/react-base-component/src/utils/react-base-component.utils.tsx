@@ -1,7 +1,7 @@
 
 import { DATA_TEST_ID } from "@phoenix_ui/constants";
 import { getClassByViewPort } from '@phoenix_ui/attribute-utils'
-import { ReactBaseComponentAttributes, ReactBaseComponentProperties } from "../../types/";
+import type { ReactBaseComponentAttributes, ReactBaseComponentProperties } from "../react-base-component.types";
 
 export const getProperties = (properties: ReactBaseComponentProperties) => {
   let {

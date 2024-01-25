@@ -1,13 +1,6 @@
-import type {
-  FlexType,
-  TextColorType,
-  BackgroundColorType,
-  ActionType
-} from '@phoenix_ui/types/attributes'
-
-import type { AllWidths, AllHeights } from '@phoenix_ui/types/sizing'
-
-import type { ActionMap, ClassByResponsiveProps } from '../types'
+import { type  FlexType, type TextColorType, type BackgroundColorType, type ActionType } from '@phoenix_ui/types/attributes'
+import { type  AllWidths, type AllHeights } from '@phoenix_ui/types/sizing'
+import { type  ActionMap, type ClassByResponsiveProps } from '../types'
 
 const actions: ActionMap = {
   neutral: {
@@ -154,6 +147,7 @@ export const recusiveClassSearch = (
   Object.entries(activeProperty)
     .forEach(([childPropertyName, property]) => {
       classes += recusiveClassSearch(
+        // @ts-ignore 
         activeProperty[childPropertyName] as ClassByResponsiveProps,
         childPropertyName,
         [propertyName, ...parentNames]

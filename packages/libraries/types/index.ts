@@ -1,5 +1,4 @@
-import { SyntheticEvent } from "react";
-
+import type { SyntheticEvent } from "react";
 import type { TextSizeType } from "./texts";
 import type { AllMargins, AllPaddings } from "./spacing";
 import type { AllHeights, AllWidths } from "./sizing";

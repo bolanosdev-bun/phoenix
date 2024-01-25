@@ -1,5 +1,4 @@
-import { SyntheticEvent } from "react";
-
+import type { SyntheticEvent } from "react";
 import type { TextSizeType } from "@phoenix_ui/types/texts";
 import type { AllMargins, AllPaddings } from "@phoenix_ui/types/spacing";
 import type { AllHeights, AllWidths } from "@phoenix_ui/types/sizing";

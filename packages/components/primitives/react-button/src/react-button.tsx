@@ -1,5 +1,5 @@
 'use client';
-import type React from 'react'
+import React from 'react'
 import classnames from 'classnames'
 import {
   getTextColorAttribute,
@@ -8,11 +8,11 @@ import {
 } from '@phoenix_ui/attribute-utils'
 import { ReactBaseComponent } from '@phoenix_ui/react-base-component'
 
-import type { ButtonAttributes, ButtonProperties } from '../types/react-button.types'
+import type { ButtonAttributes, ButtonProperties } from './react-button.types'
 import './react-button.css'
 
-const Button: React.FC<ButtonProperties> = (properties) => {
-  console.log("f: my button")
+export const Button: React.FC<ButtonProperties> = (properties) => {
+  
   const classNames = classnames(
     'button',
     properties.scale ?? 'medium',
@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProperties> = (properties) => {
       getTextColorAttribute(properties.colors.text),
     properties.colors?.background != null &&
       getBackgroundColorAttribute(properties.colors.background),
-    properties.action != null && getActionColorAttribute(properties.action),
+    getActionColorAttribute(properties.action || 'primary'),
     properties.isFullWidth ?? false ? 'w-full' : '',
     properties.className,
   )
@@ -39,6 +39,3 @@ const Button: React.FC<ButtonProperties> = (properties) => {
     properties,
   })
 }
-
-Button.displayName = 'Button'
-export { Button }

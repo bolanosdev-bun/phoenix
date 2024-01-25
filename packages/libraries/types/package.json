@@ -4,6 +4,7 @@
   "main": "index.ts",
   "scripts": {},  
   "dependencies": {
+    "react": "^18",
     "@phoenix_ui/constants": "workspace:*"
   },
   "devDependencies": {}

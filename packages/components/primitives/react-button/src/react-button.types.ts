@@ -7,7 +7,7 @@ import type {
 import type {
   ReactBaseComponentProperties,
   ReactBaseComponentAttributes,
-} from '@phoenix_ui/react-base-component/types'
+} from '@phoenix_ui/react-base-component/'
 
 export interface ButtonAttributes extends ReactBaseComponentAttributes {
   disabled?: boolean

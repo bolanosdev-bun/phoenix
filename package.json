@@ -2,11 +2,13 @@
   "name": "phoenix",
   "type": "module",
   "scripts": {
-    "dev": "cd apps/blog && bun run dev "
+    "dev:blog": "cd apps/blog && bun run dev ",
+    "build:blog": "cd apps/blog && bun run build"
   },
   "workspaces": [
     "apps/*",
     "packages/*",
+    "packages/components/primitives/*",
     "packages/libraries/*"
   ],
   "devDependencies": {
