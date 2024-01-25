@@ -6,7 +6,8 @@
   },
   "workspaces": [
     "apps/*",
-    "packages/*"
+    "packages/*",
+    "packages/libraries/*"
   ],
   "devDependencies": {
     "@types/bun": "latest"
