@@ -1,0 +1,17 @@
+{
+  "name": "phoenix",
+  "type": "module",
+  "scripts": {
+    "dev": "cd apps/blog && bun run dev "
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest"
+  },  
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
