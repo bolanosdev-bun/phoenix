@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "@phoenix_ui/baseline/compiled/baseline.minified.css";
+import "@phoenix_ui/baseline/compiled/baseline.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

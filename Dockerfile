@@ -12,6 +12,7 @@ RUN apt-get -y update && \
 # Next.js app lives here
 WORKDIR /app
 
+
 # Build the app
 FROM deps AS builder
 
@@ -19,9 +20,8 @@ FROM deps AS builder
 ENV NODE_ENV="production"
 
 # Install node modules
-COPY --link . . 
+COPY . . 
 RUN bun install --frozen-lockfile
-
 RUN bun run next:build
 
 

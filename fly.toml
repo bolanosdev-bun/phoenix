@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for phoenix-web on 2024-01-25T18:11:05-08:00
+# fly.toml app configuration file generated for bolanosdev on 2024-01-25T20:23:49-08:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'phoenix-web'
+app = 'bolanosdev'
 primary_region = 'sjc'
 
 [build]

@@ -7,7 +7,9 @@
     "next:start": "cd apps/web && npm run start",
     "remix:dev": "cd apps/remix && bun run dev ",
     "remix:build": "cd apps/remix && npm run build",
-    "remix:start": "cd apps/remix && npm run start"
+    "remix:start": "cd apps/remix && npm run start",
+    "tw:dev": "cd packages/libraries/baseline && bun run dev",
+    "tw:build": "cd packages/libraries/baseline && bun run build"
   },
   "workspaces": [
     "apps/*",
