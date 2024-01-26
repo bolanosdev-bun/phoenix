@@ -2,8 +2,12 @@
   "name": "phoenix",
   "type": "module",
   "scripts": {
-    "dev:blog": "cd apps/blog && bun run dev ",
-    "build:blog": "cd apps/blog && bun run build"
+    "next:dev": "cd apps/web && bun run dev ",
+    "next:build": "cd apps/web && npm run build",
+    "next:start": "cd apps/web && npm run start",
+    "remix:dev": "cd apps/remix && bun run dev ",
+    "remix:build": "cd apps/remix && npm run build",
+    "remix:start": "cd apps/remix && npm run start"
   },
   "workspaces": [
     "apps/*",
@@ -12,8 +16,9 @@
     "packages/libraries/*"
   ],
   "devDependencies": {
+    "@flydotio/dockerfile": "latest",
     "@types/bun": "latest"
-  },  
+  },
   "peerDependencies": {
     "typescript": "^5.0.0"
   }
