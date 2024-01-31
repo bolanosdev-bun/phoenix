@@ -21,7 +21,7 @@ ENV NODE_ENV="production"
 
 # Install node modules
 COPY . . 
-RUN bun install --frozen-lockfile
+RUN bun install
 RUN bun run next:build
 
 

@@ -2,14 +2,14 @@
   "name": "@phoenix_ui/baseline",
   "version": "1.0.0",
   "scripts": {
-    "tw:dev:sm": "tailwindcss -i ./src/baseline.css -o ./compiled/baseline.css --watch",
-    "tw:dev:md": "tailwindcss -i ./src/baseline.css -o ./compiled/baseline.md.css -c tailwind.md.config.js --watch",
-    "tw:dev:lg": "tailwindcss -i ./src/baseline.css -o ./compiled/baseline.lg.css -c tailwind.lg.config.js --watch",
-    "tw:build:sm": "tailwindcss -i ./src/baseline.css -o ./compiled/baseline.min.css --minify",
-    "tw:build:md": "tailwindcss -i ./src/baseline.css -o ./compiled/baseline.md.min.css -c tailwind.md.config.js --minify",
-    "tw:build:lg": "tailwindcss -i ./src/baseline.css -o ./compiled/baseline.lg.min.css -c tailwind.lg.config.js --minify",
-    "dev": "concurrently \"bun run tw:dev:sm\" \"bun run tw:dev:md\" \"bun run tw:dev:lg\"",
-    "build": "concurrently \"bun run tw:build:sm\" \"bun run tw:build:md\" \"bun run tw:build:lg\""
+    "tw:dev:sm": "tailwindcss -i ./styles/baseline.css -o ./compiled/baseline.css ",
+    "tw:dev:md": "tailwindcss -i ./styles/baseline.md.css -o ./compiled/baseline.md.css -c tailwind.md.config.js ",
+    "tw:dev:lg": "tailwindcss -i ./styles/baseline.lg.css -o ./compiled/baseline.lg.css -c tailwind.lg.config.js ",
+    "tw:build:sm": "tailwindcss -i ./styles/baseline.css -o ./compiled/baseline.min.css --minify",
+    "tw:build:md": "tailwindcss -i ./styles/baseline.css -o ./compiled/baseline.min.md.css -c tailwind.md.config.js --minify",
+    "tw:build:lg": "tailwindcss -i ./styles/baseline.css -o ./compiled/baseline.min.lg.css -c tailwind.lg.config.js --minify",
+    "dev": "concurrently \"bun run tw:dev:sm\"",
+    "build": "concurrently \"bun run tw:build:sm\" "
   },
   "dependencies": {},
   "config": {},
