@@ -1,0 +1,9 @@
+{
+  "name": "@phoenix/types",
+  "version": "1.0.0",
+  "main": "bun run --hot index.ts",
+  "scripts": {},  
+  "dependencies": {    
+  },
+  "devDependencies": {}
+}

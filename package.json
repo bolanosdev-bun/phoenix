@@ -2,6 +2,8 @@
   "name": "phoenix",
   "type": "module",
   "scripts": {
+    "graphql:dev": "cd apps/graphql/spinner && bun run dev",
+    "api:users:dev": "cd apps/domain/users-api && bun run dev",
     "next:dev": "cd apps/web && bun run dev ",
     "next:build": "cd apps/web && npm run build",
     "next:start": "cd apps/web && npm run start",
@@ -13,6 +15,8 @@
   },
   "workspaces": [
     "apps/*",
+    "apps/graphql/*",
+    "apps/domain/*",
     "packages/*",
     "packages/components/primitives/*",
     "packages/libraries/*"

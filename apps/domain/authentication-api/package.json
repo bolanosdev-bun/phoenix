@@ -1,0 +1,17 @@
+{
+  "name": "@phoenix/my-api",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "@hono/swagger-ui": "^0.2.1",
+    "@hono/zod-openapi": "^0.9.6",
+    "@hono/zod-validator": "^0.1.11",
+    "hono": "^3.12.8",
+    "zod": "^3.22.4",
+    "@phoenix/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
